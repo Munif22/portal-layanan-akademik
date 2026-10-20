@@ -1,39 +1,38 @@
-# Portal Layanan Akademik
+# Bukti Pengujian Browser DevTools
 
-Contoh proyek tugas Pertemuan 5 — Responsive & Accessible Web Client.
+Simpan hasil screenshot pengujian pada folder ini. Contoh nama berkas:
 
-## Struktur folder
+- `01-desktop-1280.png` — tampilan halaman pada viewport 1280 px.
+- `02-tablet-768.png` — tampilan halaman pada viewport 768 px.
+- `03-mobile-360.png` — tampilan halaman pada viewport 360 px.
+- `04-elements.png` — panel Elements yang memperlihatkan struktur HTML semantik.
+- `05-network.png` — panel Network setelah halaman di-reload.
+- `06-form-validation.png` — validasi browser ketika kolom wajib dikosongkan atau email tidak valid.
+- `07-keyboard-focus.png` — indikator fokus saat navigasi menggunakan tombol Tab.
 
-```text
-portal_layanan_akademik/
-├── index.html
-├── css/
-│   └── styles.css
-├── evidence/
-│   └── README.md
-└── README.md
-```
+## Langkah pengujian
 
-## Cara menjalankan
+1. Buka `index.html` di browser.
+2. Tekan `F12` atau `Ctrl + Shift + I` untuk membuka DevTools.
+3. Aktifkan Device Toolbar (`Ctrl + Shift + M`) dan uji lebar 360, 768, dan 1280 px.
+4. Pada setiap ukuran, periksa apakah ada scroll horizontal, teks terpotong, atau kontrol yang terlalu sempit.
+5. Di panel Elements, periksa landmark, heading, label form, dan aturan CSS aktif.
+6. Di panel Network, aktifkan pencatatan bila perlu lalu reload halaman. Pastikan `index.html` dan `css/styles.css` berhasil dimuat; catat jika ada resource gagal.
+7. Coba kirim form dengan kolom wajib kosong dan email yang tidak valid. Pastikan browser menampilkan validasi.
+8. Gunakan tombol `Tab` dan `Shift + Tab` untuk memeriksa urutan navigasi serta indikator fokus.
+9. Jika tersedia, gunakan Accessibility/Inspector untuk memeriksa nama aksesibel dan struktur heading.
 
-1. Ekstrak folder proyek.
-2. Buka `index.html` di browser, atau gunakan ekstensi Live Server di Visual Studio Code.
-3. Tidak membutuhkan JavaScript, framework, package manager, atau koneksi internet.
+## Template catatan hasil
 
-## Fitur yang diterapkan
+| Pemeriksaan | Hasil aktual | Catatan/perbaikan |
+|---|---|---|
+| Viewport 360 px | Isi setelah diuji | Isi setelah diuji |
+| Viewport 768 px | Isi setelah diuji | Isi setelah diuji |
+| Viewport 1280 px | Isi setelah diuji | Isi setelah diuji |
+| Elements/Inspector | Isi setelah diuji | Isi setelah diuji |
+| Network | Isi setelah diuji | Isi setelah diuji |
+| Validasi form | Isi setelah diuji | Isi setelah diuji |
+| Keyboard/focus | Isi setelah diuji | Isi setelah diuji |
+| Accessibility Inspector | Isi setelah diuji | Isi setelah diuji |
 
-- HTML semantik: `header`, `nav`, `main`, `section`, `article`, `form`, dan `footer`.
-- Tiga kartu layanan: Surat Aktif Kuliah, Transkrip Sementara, dan Cuti Akademik.
-- Form permohonan dengan nama, email, NIM, jenis layanan, keperluan, konfirmasi, dan validasi HTML.
-- CSS mobile-first dengan Flexbox dan Grid.
-- Breakpoint tablet dan desktop.
-- Skip link, label form yang terhubung, fokus keyboard yang terlihat, kontras teks, dan dukungan reduced motion.
-- Tidak memakai gambar eksternal sehingga tidak ada gambar informatif yang membutuhkan atribut `alt`.
-
-## Batasan
-
-Ini adalah antarmuka front-end statis. Form memakai validasi browser, tetapi belum menyimpan atau mengirim data ke server. `action="#"` digunakan sebagai placeholder untuk demonstrasi; integrasi backend diperlukan untuk pemrosesan nyata.
-
-## Pengujian yang perlu dilakukan
-
-Lihat `evidence/README.md` untuk daftar pemeriksaan dan screenshot yang perlu diambil. Jangan mengisi laporan dengan hasil yang belum benar-benar diuji.
+Catatan: isi hasil berdasarkan pengujian nyata dan tambahkan screenshot sendiri.
